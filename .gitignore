@@ -1,0 +1,34 @@
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Server credentials and local settings
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Learner records, logs and private working material
+data/
+work/
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.zip
+
+# Privately supplied publications and course originals
+references/literature-2026/
+*.pdf
+*.docx
+
+# OS/editor state
+.DS_Store
+.vscode/
+.idea/

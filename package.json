@@ -1,0 +1,39 @@
+{
+  "name": "speakup-ai",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 4311",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 4311",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:api": "tsx --test tests/api.integration.ts",
+    "test:api:isolated": "node scripts/test-api.mjs",
+    "launch": "node scripts/launch.mjs --open"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "lucide-react": "^0.468.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/postcss": "4.3.3",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.4.3",
+    "tsx": "^4.20.6"
+  },
+  "type": "module"
+}
